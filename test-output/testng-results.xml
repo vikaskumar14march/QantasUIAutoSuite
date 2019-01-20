@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="61606" started-at="2019-01-20T09:35:08Z" finished-at="2019-01-20T09:36:10Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="61606" started-at="2019-01-20T09:35:08Z" finished-at="2019-01-20T09:36:10Z">
+      <class name="servicensw.tests.searchTest">
+        <test-method status="PASS" signature="beforeSuite(org.testng.ITestContext)[pri:0, instance:servicensw.tests.searchTest@5700d6b1]" name="beforeSuite" is-config="true" duration-ms="489" started-at="2019-01-20T09:35:08Z" finished-at="2019-01-20T09:35:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@df5f5c0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:servicensw.tests.searchTest@5700d6b1]" name="beforeTest" is-config="true" duration-ms="26" started-at="2019-01-20T09:35:08Z" finished-at="2019-01-20T09:35:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@df5f5c0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeClass(org.testng.ITestContext)[pri:0, instance:servicensw.tests.searchTest@5700d6b1]" name="beforeClass" is-config="true" duration-ms="8805" started-at="2019-01-20T09:35:08Z" finished-at="2019-01-20T09:35:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@df5f5c0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:servicensw.tests.searchTest@5700d6b1]" name="beforeMethod" is-config="true" duration-ms="17" started-at="2019-01-20T09:35:17Z" finished-at="2019-01-20T09:35:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[private void servicensw.tests.searchTest.searchLocateTest(java.lang.String,java.lang.String) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="searchLocateTest(java.lang.String, java.lang.String)[pri:1, instance:servicensw.tests.searchTest@5700d6b1]" name="searchLocateTest" duration-ms="28738" started-at="2019-01-20T09:35:17Z" data-provider="inputs" finished-at="2019-01-20T09:35:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sydney 2000]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Marrickville Service Centre]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchLocateTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:servicensw.tests.searchTest@5700d6b1]" name="afterMethod" is-config="true" duration-ms="4" started-at="2019-01-20T09:35:46Z" finished-at="2019-01-20T09:35:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchLocateTest status=SUCCESS method=searchTest.searchLocateTest(java.lang.String, java.lang.String)[pri:1, instance:servicensw.tests.searchTest@5700d6b1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:servicensw.tests.searchTest@5700d6b1]" name="beforeMethod" is-config="true" duration-ms="137" started-at="2019-01-20T09:35:46Z" finished-at="2019-01-20T09:35:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[private void servicensw.tests.searchTest.searchLocateTest(java.lang.String,java.lang.String) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="searchLocateTest(java.lang.String, java.lang.String)[pri:1, instance:servicensw.tests.searchTest@5700d6b1]" name="searchLocateTest" duration-ms="23042" started-at="2019-01-20T09:35:46Z" data-provider="inputs" finished-at="2019-01-20T09:36:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sydney Domestic Airport 2020]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Rockdale Service Centre]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchLocateTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:servicensw.tests.searchTest@5700d6b1]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-01-20T09:36:09Z" finished-at="2019-01-20T09:36:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchLocateTest status=SUCCESS method=searchTest.searchLocateTest(java.lang.String, java.lang.String)[pri:1, instance:servicensw.tests.searchTest@5700d6b1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:servicensw.tests.searchTest@5700d6b1]" name="afterClass" is-config="true" duration-ms="781" started-at="2019-01-20T09:36:09Z" finished-at="2019-01-20T09:36:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:servicensw.tests.searchTest@5700d6b1]" name="afterSuite" is-config="true" duration-ms="1158" started-at="2019-01-20T09:36:10Z" finished-at="2019-01-20T09:36:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- servicensw.tests.searchTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
