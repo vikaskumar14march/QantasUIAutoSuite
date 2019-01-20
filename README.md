@@ -6,8 +6,9 @@ Instruction for running Automation Test
 2.	Download Maven and setup maven variable
 3.	Download eclipse 
 4.	Clone the Automation solution from below git urls. 
-https://github.com/vikaskumar14march/QantasUIAutoSuite.git
-git@github.com:vikaskumar14march/QantasUIAutoSuite.git
+HTTPS -- https://github.com/vikaskumar14march/QantasUIAutoSuite.git
+SSH -- git@github.com:vikaskumar14march/QantasUIAutoSuite.git
+
 5.	Open eclipse and import maven based project (which was just downloaded or cloned).
 6.	User can run the test either through eclipse or without eclipse by using maven command directly.
 a.	For running the test from eclipse, right click on below file
