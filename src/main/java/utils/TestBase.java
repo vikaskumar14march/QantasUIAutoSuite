@@ -10,6 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+//import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.ITestContext;
@@ -37,6 +38,7 @@ public class TestBase {
 	public Reporter reporter;
 	public ExcelUtil reader;
 	public SoftAssert sAssert;
+	public String nodeURL;
 	private static ThreadLocal<ExtentTest> parentTest = new ThreadLocal<ExtentTest>();
 	private static ThreadLocal<ExtentTest> test = new ThreadLocal<ExtentTest>();
 
@@ -86,6 +88,12 @@ public class TestBase {
 			
 			driver = new ChromeDriver();
 		}  
+		else if (browser.equalsIgnoreCase("Headless")) {
+			
+			// To have HtmlUnitDriver working, selenium version need to be prior to 2.53
+			// driver = new HtmlUnitDriver ();
+			
+		}
 		else if (browser.equalsIgnoreCase("BSChrome")) {
 			DesiredCapabilities capabilities = new DesiredCapabilities();
 			capabilities.setCapability("browser", "chrome");
@@ -108,28 +116,22 @@ public class TestBase {
 			driver.get("https://google.co.in");
 			System.out.println("BrowserStack session started.");
 
-		} else if (browser.equalsIgnoreCase("BSSafari")) {
+		} else if (browser.equalsIgnoreCase("Grid")) {
+			nodeURL = "http://192.168.75.128:5555/wd/hub";
 			DesiredCapabilities capabilities = new DesiredCapabilities();
-			capabilities.setCapability("browser", "Safari");
-			capabilities.setCapability("browser_version", "12.0");
-			capabilities.setCapability("os", "OS X");
-			capabilities.setCapability("os_version", "Mojave");
-			capabilities.setCapability("resolution", "1024x768");
-			System.out.println("Executing on BrowserStack");
-
-			String BSUN = "vkumar14";
-			String BSAK = "TghdmkwqsKtngbg82GzQ";
-			String BSURL = "https://" + BSUN + ":" + BSAK + "@hub-cloud.browserstack.com/wd/hub";
+			capabilities.setCapability("browser", "Chrome");
+			capabilities.setCapability("browser_version", "62.0");
+			capabilities.setCapability("os", "Windows");
+			System.out.println("Executing on Grid");
 
 			try {
-				driver = new RemoteWebDriver(new URL(BSURL), capabilities);
+				driver = new RemoteWebDriver(new URL(nodeURL), capabilities);
 			} catch (MalformedURLException e) {
-				System.out.println("Caught excepton while creating BrowserStack driver instance:" + e);
+				System.out.println("Caught excepton while creating Grid driver instance:" + e);
 				e.printStackTrace();          
 			}
 			driver.get("https://google.co.in");
-			System.out.println("BrowserStack session started.");
-
+			
 		} 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
